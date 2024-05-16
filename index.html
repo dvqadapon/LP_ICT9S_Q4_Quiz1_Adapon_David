@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>DVQ_'s Online Portfolio</title>
+	<style type="text/css">
+		body{
+			font-family: Courier New;sans-serif
+			background-color: darkgray;
+			background-image: url("loginscreen.png");
+			background-repeat: no-repeat;
+			background-position: bottom-right;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.container{
+			max-width: 500;
+			width: 400px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #212121;
+			color: lightblue;
+			border-color: mediumpurple;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.rounded{
+		height: 150px;
+		width: 150px;
+		border: solid;
+		}
+	</style>
+</head>
+<body>
+<div class="container" align="center">
+<h4><b>Welcome! Please log in:</b></h4>
+<br>
+<img class="rounded" src="icon.png">
+<br>
+<br>
+<form action="mainpage.html" method="POST" align="center" onsubmit="success()" >
+        Username: <br><input type="text" id="name" required>
+        <br><br>
+        Password: <br><input type="password" required>
+        <br><br>
+        <input type="submit" value="Log In" class="btn btn-info btn-lg">
+</form>
+<br>
+<script type="text/javascript">
+	function success (){
+		var name = document.getElementById("name").value
+		window.alert("Login successful! Welcome, " + name)
+	}
+</script>
+</div>
+</body>
+</html>
